@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 4</title>
+</head>
+<body>
+    <script>
+        function nbDiviseurs(n){
+            var nbDiviseurs = 0;
+            for(var i=1; i<=n; i++){
+                if(n%i==0){
+                    nbDiviseurs++;
+                }
+            }
+            return nbDiviseurs;
+        }
+        console.log("Les nombres premiers entre 1 et 100:");
+        for(let i=0;i<=100;i++){
+        if(nbDiviseurs(i)==2){
+          console.log(i)
+        }
+      }
+    </script>
+</body>
+</html>

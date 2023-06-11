@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 5</title>
+</head>
+<body>
+    <script>
+        var saisie = "";
+        var itFausses = 0;
+        while(saisie.length != 7){
+            var a = prompt("Saisir le " + (saisie.length+1) + " nombre");
+            while(saisie.includes(a)){
+               a = prompt("Ce nombre est deja dans le saisie! Resaisir svp");
+               itFausses++;
+            }
+                saisie += a;
+        }
+        var nbrPairs = "";
+        var nbrImpairs = "";
+        for(var i =0; i<7; i++){
+            if(Number(saisie[i])%2==0){
+                nbrPairs += saisie[i] + " ";
+            }else
+            nbrImpairs += saisie[i]  + " ";
+        }
+        alert("Nombres pairs saisies: " + nbrPairs + " Nombres impairs saisies: "+ nbrImpairs + " Iterations fausses: "+ itFausses);
+        
+    </script>
+</body>
+</html>

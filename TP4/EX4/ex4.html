@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EX4</title>
+</head>
+<body>
+    <style>
+        div {
+            display: grid;
+            padding: 1em;
+            background: #f9f9f9;
+            border: 1px solid #c1c1c1;
+            margin: 2rem auto 0 auto;
+            max-width: 600px;
+            padding: 1em;
+          }
+          div input {
+            background: #fff;
+            border: 1px solid #9c9c9c;
+          }
+          div button {
+            background: lightgrey;
+            padding: 0.7em;
+            width: 100%;
+            border: 0;
+          }
+          div button:hover {
+            background: gold;
+          }
+          
+          label {
+            padding: 0.5em 0.5em 0.5em 0;
+          }
+          
+          input {
+            padding: 0.7em;
+            margin-bottom: 0.5rem;
+          }
+          input:focus {
+            outline: 3px solid gold;
+          }
+          
+          table{
+            border-collapse: collapse;
+            margin: 30px;
+          }
+          td{
+            border: 2px solid black;
+            padding-right: 30px;
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+          #error{
+            display: none;
+            color: red;
+            font-weight: bold;
+          }
+    </style>
+<div>
+    <label for="nom">Nom de la personne: </label>
+    <input type="text" name="nom" id="nom"> <br> <br>
+    <label for="prenom">Prenom de la personne: </label>
+    <input type="text" name="prenom" id="prenom"><br> <br>
+    <label for="age">Age de la personne: </label>
+    <input type="text" name="age" id="age"><br> <br>
+    <label for="prof">Profession de la personne: </label>
+    <input type="text" name="prof" id="prof"><br> 
+    <span id="error">Insertion impossible!! verifier vos données</span>
+    <br>
+    <button onclick="ajouter()">Ajouter personne</button>
+</div>
+
+<table id="table">
+    <th>
+        <td>Nom</td>
+        <td>Prenom</td>
+        <td>Age</td>
+        <td>Mail</td>
+    </th>
+</table>
+<script src="ex4.js"></script>
+</body>
+</html>
+

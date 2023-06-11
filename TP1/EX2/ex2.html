@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 2</title>
+    <style>
+        td{
+            border: black solid 1px;
+        }
+        table{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <label for="">Nom: </label> <input type="text" name="" id="nom"><br><br>
+    <label for="">Prenom: </label> <input type="text" name="" id="prenom"><br><br>
+    <label for="">Genre: </label><select  id="genre">
+        <option value="feminin">feminin</option>
+        <option value="masculin">masculin</option>
+     </select><br><br>
+    <label for="">Poids: </label> <input type="text" name="" id="poids"><br><br>
+    <label for="">Taille: </label> <input type="text" name="" id="taille"><br><br>
+    <button onclick="calculerIMC()">Calculer</button>
+    <table>
+        <tr>
+            <td>
+            IMC
+            </td>
+        <td>
+            Interpretation
+        </td>
+        <tr >
+            <td>+ de 40</td>
+            <td>obésité morbide ou massive</td>
+        </tr>
+        <tr >
+            <td>35 à 40</td>
+            <td>obésité sévère</td>
+        </tr><tr >
+            <td>30 à 35 </td>
+            <td>obésité modérée</td>
+        </tr><tr >
+            <td>25 à 30</td>
+            <td>Surpoids</td>
+        </tr><tr >
+            <td>18.5 à 25</td>
+            <td>corpulence normale</td>
+        </tr><tr >
+            <td>16.5 à 18.5</td>
+            <td>corpulence maigre</td>
+        </tr>
+    </table>
+    <script src="ex2.js"></script>
+</body>
+</html>
